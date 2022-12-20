@@ -36,10 +36,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Run eslint with reviewdog
-        uses: reviewdog/action-eslint@v1.16.1
+      - name: Eslint check
+        uses: krizzu/eslint-check-action@v1.1.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-pr-review # Change reporter.
-          eslint_flags: 'src/'
+          ghToken: ${{ secrets.GITHUB_TOKEN }}
+          eslintFiles: "lib, scripts"
+          eslintConfig: "myConfigs/eslint.config.js",
+          eslintExt: "ts, tsx"
+
 
