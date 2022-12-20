@@ -9,5 +9,5 @@ export class AppComponent {
   title = 'TestAngularProject';
     name = "Bob"
   condition = true;
-  if (condition){ this.name= "peter"}
+  if (this.condition){ this.name= "peter"}
 }
