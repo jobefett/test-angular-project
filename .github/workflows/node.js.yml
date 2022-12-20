@@ -39,7 +39,7 @@ jobs:
       - name: Eslint check
         uses: krizzu/eslint-check-action@v1.1.0
         with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          ghToken: ${{ secrets.GITHUB_TOKEN }}
 
 
 
