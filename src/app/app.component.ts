@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TestAngularProject';
+    name = "Bob"
+  if(true){ this.name= peter}
 }
